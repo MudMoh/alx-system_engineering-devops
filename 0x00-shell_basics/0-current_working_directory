@@ -1,2 +1,4 @@
 #!/bin/bash
-tree
+path= `readlink -f "${BASH_SOURCE:-$0}"`
+DIR_PATH=`dirname $path`
+echo 'The absolute path is' $DIR_PATH
